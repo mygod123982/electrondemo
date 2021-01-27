@@ -9,7 +9,7 @@
 npm install
 
 # 不安32位 个别插件会报错
-npm install --arch=ia32 --platform=win32 electron
+npm install --arch=ia32 electron
 
 # serve with hot reload at localhost:9080
 npm run dev
