@@ -1,0 +1,24 @@
+@mixin screen() {
+    content: ' ';
+    position: absolute;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+@mixin screen-small() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen-medium() {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin screen-large() {
+    @media (min-width: 992px) {
+        @content;
+    }
+}

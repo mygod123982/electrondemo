@@ -1,0 +1,96 @@
+/* theme color */
+$--color-primary: #006da2;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+
+
+.el-button.icon-button.is-loading {
+    span {
+        display: none; // 去除 button loading 时，button 内容
+    }
+}
+
+.el-button--text {
+    padding: 0;
+}
+
+
+.el-notification {
+    padding: 6px 3px;
+
+    .el-notification__icon {
+        height: 20px;
+        width: 20px;
+        font-size: 20px;
+    }
+
+    .el-notification__title {
+        font-size: 0.9rem;
+    }
+
+    .el-notification__group.is-with-icon {
+        max-width: 80%;
+
+        .el-notification__content {
+            text-align: left;
+            font-size: 0.8rem;
+            overflow-wrap: break-word;
+        }
+    }
+
+    .el-notification__closeBtn.el-icon-close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+
+
+.el-dropdown-menu {
+
+    border-radius: 2px;
+    min-width: 100px;
+    padding: 2px;
+
+    .el-dropdown-menu__item {
+        padding: 0 5px;
+
+        svg,
+        icon {
+            margin-right: 5px;
+        }
+    }
+
+    .el-divider {
+        margin: 0;
+    }
+}
+
+
+.el-drawer__body {
+    overflow: hidden;
+}
+
+
+
+.el-dialog__wrapper,
+.el-message-box__wrapper {
+    display: flex;
+
+    .el-dialog,
+    .el-message-box {
+        margin: auto;
+        margin-top: auto !important;
+        width: 95% !important;
+        max-width: 600px;
+
+        .el-dialog__body {
+            word-break: break-word;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "./mixins/flex-wrap-fix.scss";
+@import "./mixins/flex-container-wrap-items.scss";
+
+$blue: #006da2;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$white: #ffffff;
+$wechat-green:#17a839;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$primary-color: #006da2;
+$lighter-grey:#f3f6f9;
+$light-grey: #e5e9ec;
+$grey:#999ea2;
+$dark-grey: #4e5a66;
+
+$danger-color: #e3342f;
+$success-color: #67C23A;
+
+$dark-background-color: #06172a;
+$dark-background-contrast-color: #ffffff;
+
+$action-bar-height: 55px;
+
+$whiteboard-toolbox-active-color: #1f3d5f;
+$whiteboard-toolbox-inactive-color: #A2A7AD;
+
+:export {
+    whiteboardToolBoxActiveColor: $whiteboard-toolbox-active-color;
+    whiteboardToolBoxInactiveColor: $whiteboard-toolbox-inactive-color;
+}  

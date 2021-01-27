@@ -1,0 +1,12 @@
+@mixin bullet($color: #4b8ff4, $width: 3px, $height: 15px) {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    background: $color;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}
